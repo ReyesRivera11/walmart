@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.DEBUG)
 with open('wolmar.pkl', 'rb') as f:
     model = joblib.load(f)
 app.logger.debug('Modelo cargado correctamente.')
-
+#cambios en el html
 @app.route('/')
 def home():
     return render_template('Wolmar.html')
